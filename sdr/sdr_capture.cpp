@@ -3,7 +3,7 @@
 #include <iostream>
 #include <cstring>
 
-static rtlsdr_dev_t* dev = nullptr;
+rtlsdr_dev_t* dev = nullptr;
 
 void init_rtl_sdr() {
     int r = rtlsdr_open(&dev, 0);

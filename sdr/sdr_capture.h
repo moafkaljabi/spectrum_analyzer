@@ -1,7 +1,9 @@
-#pragma once 
+#pragma once
 #include <vector>
 #include <cstdint>
+#include <rtl-sdr.h>
 
-// Reads N I/Q samples from the SDR
+// ADD THIS LINE
+extern rtlsdr_dev_t* dev;   // ← makes dev visible to main.cpp
+
 std::vector<uint8_t> read_rtl_samples(int count);
-
